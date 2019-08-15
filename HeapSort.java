@@ -39,22 +39,4 @@ public class HeapSort{
 			A[A.length-1-j]=temp;
 		}
 	}
-
-	
-
-	public static void main(String[] args) {
-		Scanner input=new Scanner(System.in);
-
-		int n = input.nextInt();
-		int[] Array= new int[n];
-
-		for(int i=0;i<Array.length;i++){
-			Array[i]=input.nextInt();
-		}
-
-		HeapSort.sort(Array);
-		for(int el:Array){
-			System.out.printf("%d ",el);
-		}
-	}
 }
