@@ -10,30 +10,9 @@ public class BubbleSort{
 					A[i]=A[i+1];
 					A[i+1]= temp;
 				}	
-
 			}
 			n++;
 		}			
-	}
-
-	public static void main(String[] args) {
-		Scanner input=new Scanner(System.in);
-
-		int n = input.nextInt();
-		int[] Array= new int[n];
-
-		for(int i=0;i<Array.length;i++){
-			Array[i]=input.nextInt();
-		}
-
-		BubbleSort.sort(Array);
-		for(int el:Array){
-			System.out.printf("%d ",el);
-
-		}
-		
-
-
 	}
 
 }

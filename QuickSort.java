@@ -36,31 +36,7 @@ public class QuickSort{
 			int q= partition(Array,p,r);
 			sort(Array,p,q-1);
 			sort(Array,q+1,r);
-		}
-
-			
-		
+		}		
 	}
 
-
-
-	
-	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
-		int n= input.nextInt();
-		int[] Array= new int[n];
-
-		for(int i=0;i<n;i++){
-			Array[i]=input.nextInt();
-
-		}
-		int p= 0;
-		int r= Array.length-1;
-		sort(Array ,p,r);
-		for(int el:Array){
- 			System.out.printf("%d ",el);
- 		}	
-
-
-	}
 }

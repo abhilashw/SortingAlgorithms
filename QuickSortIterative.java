@@ -52,22 +52,4 @@ public class QuickSortIterative{
 		}	
 	}
 
-
-	public static void main(String[] args) {
-		
-		Scanner input = new Scanner(System.in);
-		int n= input.nextInt();
-		int[] Array= new int[n];
-
-		for(int i=0;i<n;i++){
-			Array[i]=input.nextInt();
-
-		}
-		int p= 0;
-		int r= Array.length-1;
-		iterativeSort(Array ,p,r);
-		for(int el:Array){
- 			System.out.printf("%d ",el);
- 		}	
-	}
 }
